@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		F7713931249586B700B43203 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7713930249586B700B43203 /* Preview Assets.xcassets */; };
 		F7713934249586B700B43203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7713932249586B700B43203 /* LaunchScreen.storyboard */; };
 		F771394024958E3C00B43203 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F771393F24958E3C00B43203 /* CardView.swift */; };
+		F77139442495AB1200B43203 /* VectorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77139432495AB1200B43203 /* VectorMath.swift */; };
+		F77139472495B49800B43203 /* Surge in Frameworks */ = {isa = PBXBuildFile; productRef = F77139462495B49800B43203 /* Surge */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,7 @@
 		F7713933249586B700B43203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7713935249586B700B43203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F771393F24958E3C00B43203 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F77139432495AB1200B43203 /* VectorMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorMath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F77139472495B49800B43203 /* Surge in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,15 +62,16 @@
 		F7713926249586B600B43203 /* ECE564_Project */ = {
 			isa = PBXGroup;
 			children = (
-				F771393E24958D3D00B43203 /* Models */,
+				F7713935249586B700B43203 /* Info.plist */,
 				F7713927249586B600B43203 /* AppDelegate.swift */,
-				F7713929249586B600B43203 /* SceneDelegate.swift */,
+				F771393F24958E3C00B43203 /* CardView.swift */,
 				F771392B249586B600B43203 /* ContentView.swift */,
+				F7713929249586B600B43203 /* SceneDelegate.swift */,
 				F771392D249586B700B43203 /* Assets.xcassets */,
 				F7713932249586B700B43203 /* LaunchScreen.storyboard */,
-				F7713935249586B700B43203 /* Info.plist */,
+				F771393E24958D3D00B43203 /* Models */,
 				F771392F249586B700B43203 /* Preview Content */,
-				F771393F24958E3C00B43203 /* CardView.swift */,
+				F77139432495AB1200B43203 /* VectorMath.swift */,
 			);
 			path = ECE564_Project;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 			);
 			name = ECE564_Project;
 			packageProductDependencies = (
+				F77139462495B49800B43203 /* Surge */,
 			);
 			productName = ECE564_Project;
 			productReference = F7713924249586B600B43203 /* ECE564_Project.app */;
@@ -133,6 +139,7 @@
 			);
 			mainGroup = F771391B249586B600B43203;
 			packageReferences = (
+				F77139452495B49800B43203 /* XCRemoteSwiftPackageReference "Surge" */,
 			);
 			productRefGroup = F7713925249586B600B43203 /* Products */;
 			projectDirPath = "";
@@ -164,6 +171,7 @@
 				F7713928249586B600B43203 /* AppDelegate.swift in Sources */,
 				F771392A249586B600B43203 /* SceneDelegate.swift in Sources */,
 				F771394024958E3C00B43203 /* CardView.swift in Sources */,
+				F77139442495AB1200B43203 /* VectorMath.swift in Sources */,
 				F771392C249586B600B43203 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F77139452495B49800B43203 /* XCRemoteSwiftPackageReference "Surge" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Jounce/Surge.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F77139462495B49800B43203 /* Surge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F77139452495B49800B43203 /* XCRemoteSwiftPackageReference "Surge" */;
+			productName = Surge;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F771391C249586B600B43203 /* Project object */;
 }

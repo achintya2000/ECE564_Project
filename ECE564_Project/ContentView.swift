@@ -31,7 +31,7 @@ struct ContentView: View {
                         Section(header: Text("All Operations")) {
                             ForEach(mathOperationCategories, id: \.self) { operation in
                                 
-                                NavigationLink(destination: TEST()) {
+                                NavigationLink(destination: VectorMath()) {
                                     Text(operation)
                                 }
                             }
