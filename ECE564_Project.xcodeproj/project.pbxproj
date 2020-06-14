@@ -13,6 +13,7 @@
 		F771392E249586B700B43203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F771392D249586B700B43203 /* Assets.xcassets */; };
 		F7713931249586B700B43203 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7713930249586B700B43203 /* Preview Assets.xcassets */; };
 		F7713934249586B700B43203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7713932249586B700B43203 /* LaunchScreen.storyboard */; };
+		F771394024958E3C00B43203 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F771393F24958E3C00B43203 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F7713930249586B700B43203 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F7713933249586B700B43203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7713935249586B700B43203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F771393F24958E3C00B43203 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		F7713926249586B600B43203 /* ECE564_Project */ = {
 			isa = PBXGroup;
 			children = (
+				F771393E24958D3D00B43203 /* Models */,
 				F7713927249586B600B43203 /* AppDelegate.swift */,
 				F7713929249586B600B43203 /* SceneDelegate.swift */,
 				F771392B249586B600B43203 /* ContentView.swift */,
@@ -63,6 +66,7 @@
 				F7713932249586B700B43203 /* LaunchScreen.storyboard */,
 				F7713935249586B700B43203 /* Info.plist */,
 				F771392F249586B700B43203 /* Preview Content */,
+				F771393F24958E3C00B43203 /* CardView.swift */,
 			);
 			path = ECE564_Project;
 			sourceTree = "<group>";
@@ -73,6 +77,13 @@
 				F7713930249586B700B43203 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F771393E24958D3D00B43203 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +102,8 @@
 			dependencies = (
 			);
 			name = ECE564_Project;
+			packageProductDependencies = (
+			);
 			productName = ECE564_Project;
 			productReference = F7713924249586B600B43203 /* ECE564_Project.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +132,8 @@
 				Base,
 			);
 			mainGroup = F771391B249586B600B43203;
+			packageReferences = (
+			);
 			productRefGroup = F7713925249586B600B43203 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,6 +163,7 @@
 			files = (
 				F7713928249586B600B43203 /* AppDelegate.swift in Sources */,
 				F771392A249586B600B43203 /* SceneDelegate.swift in Sources */,
+				F771394024958E3C00B43203 /* CardView.swift in Sources */,
 				F771392C249586B600B43203 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

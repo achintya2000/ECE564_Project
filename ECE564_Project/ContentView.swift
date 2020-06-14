@@ -10,33 +10,73 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
+    
+    @State var mathOperationCategories = ["Vector Math", "Matrix Math", "Etc"]
  
     var body: some View {
         TabView(selection: $selection){
-            Text("First View")
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image("first")
-                        Text("First")
+            NavigationView {
+                VStack(spacing: 30) {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            CardView(category: "Category: Vectors", heading: "Finding a pair of Vector's Dot Product", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255))
+                                .frame(width: UIScreen.screenWidth * 0.8)
+                                
+                            CardView(category: "Category: Vectors", heading: "Finding a pair of Vector's Dot Product", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255))
+                                .frame(width: UIScreen.screenWidth * 0.8)
+                        }
+                    }
+                                            
+                    List {
+                        Section(header: Text("All Operations")) {
+                            ForEach(mathOperationCategories, id: \.self) { operation in
+                                
+                                NavigationLink(destination: TEST()) {
+                                    Text(operation)
+                                }
+                            }
+                        }
                     }
                 }
-                .tag(0)
+                .navigationBarTitle("Hello")
+            }
+            .tabItem {
+                VStack {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            }
+            .tag(0)
+            
             Text("Second View")
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image("second")
-                        Text("Second")
+                        Image(systemName: "gear")
+                        Text("Settings")
                     }
                 }
                 .tag(1)
-        }
+        }.colorInvert()
     }
+}
+
+struct TEST: View {
+    var body: some View {
+        Text("This is the detail view")
+    }
+}
+
+extension UIScreen {
+   static let screenWidth = UIScreen.main.bounds.size.width
+   static let screenHeight = UIScreen.main.bounds.size.height
+   static let screenSize = UIScreen.main.bounds.size
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        .previewDevice(PreviewDevice(rawValue: "iPhone 11"))
+        .previewDisplayName("iPhone 11")
     }
 }
