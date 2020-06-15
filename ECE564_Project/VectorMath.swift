@@ -67,8 +67,12 @@ struct VectorMath: View {
                         self.output = "\(result)"
                         break
                     case .Mult:
+                        let result = Surge.elmul(values1, values2)
+                        self.output = "\(result)"
                         break
                     case .Div:
+                        let result = Surge.eldiv(values1, values2)
+                        self.output = "\(result)"
                         break
                     }
                 }) {
@@ -76,7 +80,9 @@ struct VectorMath: View {
                 }
                 Spacer()
             }
-            Text(output)
+            Text("< \(output) >")
+                .font(.title)
+                .frame(maxWidth: .infinity, alignment: .center)
         }
     }
     
