@@ -16,15 +16,41 @@ struct VectorMath: View {
     
     let values1: Vector<Scalar> = [1, 2, 3]
     let values2: Vector<Scalar> = [4, -5, 6]
+    
+    @State var input1 = ""
+    @State var operation : BasicOperation = .Add
         
     var body: some View {
         Form {
-            Section(header: Text("Addition")) {
+            Section(header: Text("Vector 1")) {
                 HStack {
-                    TextField(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/, text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                    Spacer()
+                    VectorInput()
+                    Spacer()
                 }
             }
-            .navigationBarTitle("Vector Math")
+            Section(header: Text("Vector 2")) {
+                HStack {
+                    Spacer()
+                    VectorInput()
+                    Spacer()
+                }
+            }
+            Section(header: Text("Element Wise Operation")) {
+                Picker(selection: $operation, label: Text("")) {
+                    ForEach(BasicOperation.allCases, id: \.self) { op in
+                        Text(op.rawValue)
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+            }
+            HStack {
+                Spacer()
+                Button(action: {}) {
+                    Text("Submit")
+                }
+                Spacer()
+            }
         }.onAppear {
             self.doWork()
         }
@@ -42,5 +68,40 @@ struct VectorMath_Previews: PreviewProvider {
     static var previews: some View {
         VectorMath()
     }
+}
+
+struct VectorInput: View {
+    @State var x = ""
+    @State var y = ""
+    @State var z = ""
+    @State var w = ""
+    
+    var body: some View {
+        HStack {
+            TextField("0", text: $x)
+                .multilineTextAlignment(.center)
+                .frame(width: 25)
+                .keyboardType(.numberPad)
+            TextField("0", text: $y)
+                .multilineTextAlignment(.center)
+                .frame(width: 25)
+                .keyboardType(.numberPad)
+            TextField("0", text: $z)
+                .multilineTextAlignment(.center)
+                .frame(width: 25)
+                .keyboardType(.numberPad)
+            TextField("0", text: $w)
+                .multilineTextAlignment(.center)
+                .frame(width: 25)
+                .keyboardType(.numberPad)
+        }
+    }
+}
+
+enum BasicOperation : String, CaseIterable {
+    case Add = "Add"
+    case Sub = "Sub"
+    case Mult = "Mult"
+    case Div = "Div"
 }
 
