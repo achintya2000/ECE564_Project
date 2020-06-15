@@ -67,11 +67,11 @@
 				F771393F24958E3C00B43203 /* CardView.swift */,
 				F771392B249586B600B43203 /* ContentView.swift */,
 				F7713929249586B600B43203 /* SceneDelegate.swift */,
+				F77139432495AB1200B43203 /* VectorMath.swift */,
 				F771392D249586B700B43203 /* Assets.xcassets */,
 				F7713932249586B700B43203 /* LaunchScreen.storyboard */,
 				F771393E24958D3D00B43203 /* Models */,
 				F771392F249586B700B43203 /* Preview Content */,
-				F77139432495AB1200B43203 /* VectorMath.swift */,
 			);
 			path = ECE564_Project;
 			sourceTree = "<group>";
