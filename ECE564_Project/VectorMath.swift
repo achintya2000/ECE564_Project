@@ -12,8 +12,6 @@ import simd
 import Surge
 
 struct VectorMath: View {
-    typealias Scalar = Double
-    
     @State var output = ""
     @State var operation : BasicOperation = .Add
     
@@ -54,8 +52,8 @@ struct VectorMath: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    let values1: Vector<Scalar> = [self.v1_1, self.v1_2, self.v1_3, self.v1_4]
-                    let values2: Vector<Scalar> = [self.v2_1, self.v2_2, self.v2_3, self.v2_4]
+                    let values1: Vector<Double> = [self.v1_1, self.v1_2, self.v1_3, self.v1_4]
+                    let values2: Vector<Double> = [self.v2_1, self.v2_2, self.v2_3, self.v2_4]
                     
                     switch self.operation {
                     case .Add:
@@ -84,13 +82,6 @@ struct VectorMath: View {
                 .font(.title)
                 .frame(maxWidth: .infinity, alignment: .center)
         }
-    }
-    
-    func doWork() {
-//        let c = Surge.add(values1, values2)
-//        print(type(of: c))
-//        print(c)
-//        print(c[0])
     }
 }
 

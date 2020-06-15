@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var selection = 0
     
-    @State var mathOperationCategories = ["Vector Math", "Matrix Math", "Etc"]
+    @State var allOperations = AllOperations.createAllOperationsList()
  
     var body: some View {
         TabView(selection: $selection){
@@ -29,10 +29,9 @@ struct ContentView: View {
                                             
                     List {
                         Section(header: Text("All Operations")) {
-                            ForEach(mathOperationCategories, id: \.self) { operation in
-                                
-                                NavigationLink(destination: VectorMath()) {
-                                    Text(operation)
+                            ForEach(allOperations) { listItem in
+                                NavigationLink(destination: listItem.destination) {
+                                    Text(listItem.title)
                                 }
                             }
                         }
