@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct CardView: View, Hashable {
     //var image: String
     var category: String
     var heading: String
@@ -21,7 +21,6 @@ struct CardView: View {
                 VStack(alignment: .leading) {
                     Text(category)
                         .font(.headline)
-                        .foregroundColor(.secondary)
                     Text(heading)
                         .font(.title)
                         .fontWeight(.black)
@@ -29,7 +28,6 @@ struct CardView: View {
                         .lineLimit(nil)
                     Text(caption.uppercased())
                         .font(.caption)
-                        .foregroundColor(.secondary)
                 }
                 Spacer()
             }

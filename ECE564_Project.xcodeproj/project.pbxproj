@@ -17,6 +17,7 @@
 		F77139442495AB1200B43203 /* VectorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77139432495AB1200B43203 /* VectorMath.swift */; };
 		F77139472495B49800B43203 /* Surge in Frameworks */ = {isa = PBXBuildFile; productRef = F77139462495B49800B43203 /* Surge */; };
 		F7713949249828AA00B43203 /* AllOperationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713948249828AA00B43203 /* AllOperationsModel.swift */; };
+		F771394B24982D0900B43203 /* QuicklinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F771394A24982D0900B43203 /* QuicklinksModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F771393F24958E3C00B43203 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F77139432495AB1200B43203 /* VectorMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorMath.swift; sourceTree = "<group>"; };
 		F7713948249828AA00B43203 /* AllOperationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOperationsModel.swift; sourceTree = "<group>"; };
+		F771394A24982D0900B43203 /* QuicklinksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicklinksModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				F7713948249828AA00B43203 /* AllOperationsModel.swift */,
+				F771394A24982D0900B43203 /* QuicklinksModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				F771392A249586B600B43203 /* SceneDelegate.swift in Sources */,
 				F771394024958E3C00B43203 /* CardView.swift in Sources */,
 				F77139442495AB1200B43203 /* VectorMath.swift in Sources */,
+				F771394B24982D0900B43203 /* QuicklinksModel.swift in Sources */,
 				F771392C249586B600B43203 /* ContentView.swift in Sources */,
 				F7713949249828AA00B43203 /* AllOperationsModel.swift in Sources */,
 			);

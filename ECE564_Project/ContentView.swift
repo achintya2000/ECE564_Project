@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var selection = 0
     
     @State var allOperations = AllOperations.createAllOperationsList()
+    @State var allQuickLinks = QuicklinksModel.createQuickLinks()
  
     var body: some View {
         TabView(selection: $selection){
@@ -19,11 +20,14 @@ struct ContentView: View {
                 VStack(spacing: 30) {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
-                            CardView(category: "Category: Vectors", heading: "Finding a pair of Vector's Dot Product", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255))
-                                .frame(width: UIScreen.screenWidth * 0.8)
-                                
-                            CardView(category: "Category: Vectors", heading: "Finding a pair of Vector's Dot Product", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255))
-                                .frame(width: UIScreen.screenWidth * 0.8)
+                            ForEach(allQuickLinks, id: \.self) { cardview in
+                                cardview.frame(width: UIScreen.screenWidth * 0.8)
+                            }
+//                            CardView(category: "Category: Vectors", heading: "Finding a pair of Vector's Dot Product", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255))
+//                                .frame(width: UIScreen.screenWidth * 0.8)
+//
+//                            CardView(category: "Category: Vectors", heading: "Finding a pair of Vector's Dot Product", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255))
+//                                .frame(width: UIScreen.screenWidth * 0.8)
                         }
                     }
                                             
