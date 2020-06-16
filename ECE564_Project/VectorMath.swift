@@ -30,14 +30,14 @@ struct VectorMath: View {
             Section(header: Text("Vector 1")) {
                 HStack {
                     Spacer()
-                    VectorInput(x: $v1_1, y: $v1_2, z: $v1_3, w: $v1_4)
+                    VectorInput4(x: $v1_1, y: $v1_2, z: $v1_3, w: $v1_4)
                     Spacer()
                 }
             }
             Section(header: Text("Vector 2")) {
                 HStack {
                     Spacer()
-                    VectorInput(x: $v2_1, y: $v2_2, z: $v2_3, w: $v2_4)
+                    VectorInput4(x: $v2_1, y: $v2_2, z: $v2_3, w: $v2_4)
                     Spacer()
                 }
             }
@@ -91,7 +91,30 @@ struct VectorMath_Previews: PreviewProvider {
     }
 }
 
-struct VectorInput: View {
+struct VectorInput3: View {
+    @Binding var x: Double
+    @Binding var y: Double
+    @Binding var z: Double
+        
+    var body: some View {
+        HStack {
+            TextField("0", value: $x, formatter: NumberFormatter())
+                .multilineTextAlignment(.center)
+                .frame(width: 25)
+                .keyboardType(.numberPad)
+            TextField("0", value: $y, formatter: NumberFormatter())
+                .multilineTextAlignment(.center)
+                .frame(width: 25)
+                .keyboardType(.numberPad)
+            TextField("0", value: $z, formatter: NumberFormatter())
+                .multilineTextAlignment(.center)
+                .frame(width: 25)
+                .keyboardType(.numberPad)
+        }
+    }
+}
+
+struct VectorInput4: View {
     @Binding var x: Double
     @Binding var y: Double
     @Binding var z: Double
