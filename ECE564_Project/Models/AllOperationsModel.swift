@@ -28,7 +28,8 @@ class AllOperations {
         
         AllOperations.append(ListItem(title: "Basic Vector Math", destination: AnyView(VectorMath())))
         AllOperations.append(ListItem(title: "More Vector Math", destination: AnyView(MoreVectorMath())))
-        AllOperations.append(ListItem(title: "Matrix Math", destination: AnyView(MatrixView(rowcol: MatrixSize()))))
+        AllOperations.append(ListItem(title: "Matrix Math", destination: AnyView(StringMatrixView())))
+
         
         return AllOperations
     }
