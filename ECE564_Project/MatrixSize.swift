@@ -2,20 +2,12 @@
 //  MatrixSize.swift
 //  ECE564_Project
 //
-//  Created by Achintya Kumar on 6/15/20.
+//  Created by Sebastian Williams on 6/15/20.
 //  Copyright © 2020 Achintya Kumar. All rights reserved.
 //
 
-import SwiftUI
-
-struct MatrixSize: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct MatrixSize_Previews: PreviewProvider {
-    static var previews: some View {
-        MatrixSize()
-    }
+import Foundation
+class MatrixSize: ObservableObject {
+    @Published var numRow: [Int] = [0]
+    @Published var numCol: [Int] = [0]
 }
