@@ -20,8 +20,10 @@ struct ContentView: View {
                 VStack(spacing: 30) {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
-                            ForEach(allQuickLinks, id: \.self) { cardview in
-                                cardview.frame(width: UIScreen.screenWidth * 0.8)
+                            ForEach(allQuickLinks) { quicklinkpair in
+                                NavigationLink(destination: quicklinkpair.destination) {
+                                    quicklinkpair.cardView.frame(width: UIScreen.screenWidth * 0.8)
+                                }
                             }
                         }
                     }

@@ -12,12 +12,23 @@ import SwiftUI
 
 class QuicklinksModel {
     
-    static func createQuickLinks() -> [CardView] {
-        var quickLinksModel = [CardView]()
+    class quickLinkPair: Identifiable {
+        let id = UUID()
+        let cardView: CardView
+        let destination: AnyView
+            
+        init(card: CardView, destination: AnyView) {
+            self.cardView = card
+            self.destination = destination
+        }
+    }
     
-        quickLinksModel.append(CardView(category: "Category: Vectors", heading: "Finding a pair of Vector's Dot Product", caption: "Quicklink to calculator", color: Color.init(red: 137/255, green: 207/255, blue: 240/255)))
+    static func createQuickLinks() -> [quickLinkPair] {
+        var quickLinksModel = [quickLinkPair]()
+    
+        quickLinksModel.append(quickLinkPair(card: CardView(category: "Category: Vectors", heading: "Finding a pair of Vector's Dot Product", caption: "Quicklink to calculator", color: Color.init(red: 137/255, green: 207/255, blue: 240/255)), destination: AnyView(MoreVectorMath())))
 
-        quickLinksModel.append(CardView(category: "Category: Vectors", heading: "Find the Cross Product of Two Vectors", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255)))
+        quickLinksModel.append(quickLinkPair(card: CardView(category: "Category: Vectors", heading: "Find the Cross Product of Two Vectors", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255)), destination: AnyView(MoreVectorMath())))
     
         return quickLinksModel
     }

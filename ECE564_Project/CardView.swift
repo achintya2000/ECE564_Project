@@ -21,6 +21,7 @@ struct CardView: View, Hashable {
                 VStack(alignment: .leading) {
                     Text(category)
                         .font(.headline)
+                        .foregroundColor(.primary)
                     Text(heading)
                         .font(.title)
                         .fontWeight(.black)
@@ -28,6 +29,7 @@ struct CardView: View, Hashable {
                         .lineLimit(nil)
                     Text(caption.uppercased())
                         .font(.caption)
+                        .foregroundColor(.primary)
                 }
                 Spacer()
             }
