@@ -23,11 +23,6 @@ struct ContentView: View {
                             ForEach(allQuickLinks, id: \.self) { cardview in
                                 cardview.frame(width: UIScreen.screenWidth * 0.8)
                             }
-//                            CardView(category: "Category: Vectors", heading: "Finding a pair of Vector's Dot Product", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255))
-//                                .frame(width: UIScreen.screenWidth * 0.8)
-//
-//                            CardView(category: "Category: Vectors", heading: "Finding a pair of Vector's Dot Product", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255))
-//                                .frame(width: UIScreen.screenWidth * 0.8)
                         }
                     }
                                             
