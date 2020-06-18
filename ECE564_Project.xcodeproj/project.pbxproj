@@ -11,6 +11,7 @@
 		2B3DD65224996CF8005ED571 /* MoreVectorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD65124996CF8005ED571 /* MoreVectorMath.swift */; };
 		2B3DD65624996DE2005ED571 /* StringMatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD65324996DE2005ED571 /* StringMatrixView.swift */; };
 		2B3DD65824996DE2005ED571 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD65524996DE2005ED571 /* Parser.swift */; };
+		2B796F39249B0A9400F3FCE8 /* MatrixAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B796F38249B0A9400F3FCE8 /* MatrixAddView.swift */; };
 		F750CC2024984ADB00F05228 /* MatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750CC1F24984ADB00F05228 /* MatrixView.swift */; };
 		F750CC2224984B0600F05228 /* MatrixSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750CC2124984B0600F05228 /* MatrixSize.swift */; };
 		F7713928249586B600B43203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713927249586B600B43203 /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 		2B3DD65124996CF8005ED571 /* MoreVectorMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreVectorMath.swift; sourceTree = "<group>"; };
 		2B3DD65324996DE2005ED571 /* StringMatrixView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringMatrixView.swift; sourceTree = "<group>"; };
 		2B3DD65524996DE2005ED571 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		2B796F38249B0A9400F3FCE8 /* MatrixAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixAddView.swift; sourceTree = "<group>"; };
 		F750CC1F24984ADB00F05228 /* MatrixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixView.swift; sourceTree = "<group>"; };
 		F750CC2124984B0600F05228 /* MatrixSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSize.swift; sourceTree = "<group>"; };
 		F7713924249586B600B43203 /* ECE564_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECE564_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 				F771392F249586B700B43203 /* Preview Content */,
 				F750CC1F24984ADB00F05228 /* MatrixView.swift */,
 				F750CC2124984B0600F05228 /* MatrixSize.swift */,
+				2B796F38249B0A9400F3FCE8 /* MatrixAddView.swift */,
 			);
 			path = ECE564_Project;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				F77139442495AB1200B43203 /* VectorMath.swift in Sources */,
 				F771394B24982D0900B43203 /* QuicklinksModel.swift in Sources */,
 				F771392C249586B600B43203 /* ContentView.swift in Sources */,
+				2B796F39249B0A9400F3FCE8 /* MatrixAddView.swift in Sources */,
 				2B3DD65224996CF8005ED571 /* MoreVectorMath.swift in Sources */,
 				F7713949249828AA00B43203 /* AllOperationsModel.swift in Sources */,
 			);
