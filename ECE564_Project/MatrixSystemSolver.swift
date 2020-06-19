@@ -53,6 +53,7 @@ struct MatrixSystemSolver: View {
                 let myMatrix2 = Parser(text: self.matrixInput2, rows: self.rows2, cols: self.cols2).parse()
                 let myMatrix3 = Surge.inv(myMatrix1)
                 self.result = Surge.mul(myMatrix3, myMatrix2).description
+            
             })
             {
                 Text("Solve")

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B0EB1C5249BF00B00C9D9EF /* MatrixSystemSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0EB1C4249BF00B00C9D9EF /* MatrixSystemSolver.swift */; };
+		2B0EB1C7249D3C5500C9D9EF /* SystemSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0EB1C6249D3C5500C9D9EF /* SystemSolver.swift */; };
 		2B3DD65024996CDE005ED571 /* VectorModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD64F24996CDE005ED571 /* VectorModels.swift */; };
 		2B3DD65224996CF8005ED571 /* MoreVectorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD65124996CF8005ED571 /* MoreVectorMath.swift */; };
 		2B3DD65624996DE2005ED571 /* StringMatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD65324996DE2005ED571 /* StringMatrixView.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		2B0EB1C4249BF00B00C9D9EF /* MatrixSystemSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSystemSolver.swift; sourceTree = "<group>"; };
+		2B0EB1C6249D3C5500C9D9EF /* SystemSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSolver.swift; sourceTree = "<group>"; };
 		2B3DD64F24996CDE005ED571 /* VectorModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorModels.swift; sourceTree = "<group>"; };
 		2B3DD65124996CF8005ED571 /* MoreVectorMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreVectorMath.swift; sourceTree = "<group>"; };
 		2B3DD65324996DE2005ED571 /* StringMatrixView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringMatrixView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				F750CC2124984B0600F05228 /* MatrixSize.swift */,
 				2B796F38249B0A9400F3FCE8 /* MatrixAddView.swift */,
 				2B0EB1C4249BF00B00C9D9EF /* MatrixSystemSolver.swift */,
+				2B0EB1C6249D3C5500C9D9EF /* SystemSolver.swift */,
 			);
 			path = ECE564_Project;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				F771394B24982D0900B43203 /* QuicklinksModel.swift in Sources */,
 				F771392C249586B600B43203 /* ContentView.swift in Sources */,
 				2B796F39249B0A9400F3FCE8 /* MatrixAddView.swift in Sources */,
+				2B0EB1C7249D3C5500C9D9EF /* SystemSolver.swift in Sources */,
 				2B3DD65224996CF8005ED571 /* MoreVectorMath.swift in Sources */,
 				F7713949249828AA00B43203 /* AllOperationsModel.swift in Sources */,
 			);
@@ -322,6 +326,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ECE564_Project/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
+
 				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.72.0_3/include/;
 				INFOPLIST_FILE = ECE564_Project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -337,6 +342,27 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+
+		F771393A249586B700B43203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ECE564_Project/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.72.0_3/include/;
+				INFOPLIST_FILE = ECE564_Project/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.duke.ECE564.ECE564-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
