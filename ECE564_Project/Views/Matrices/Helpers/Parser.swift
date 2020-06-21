@@ -18,9 +18,11 @@ class Parser {
         self.cols = cols
     }
     
-    func parse() throws -> Matrix<Double> {
-        if self.rows != self.cols {
-            throw "Must be square matrix"
+    func parse(square: Bool) throws -> Matrix<Double> {
+        if square == true {
+            if self.rows != self.cols {
+                throw "Must be square matrix"
+            }
         }
         let lines = self.text.components(separatedBy: .whitespacesAndNewlines)
         var grid: [Double] = []

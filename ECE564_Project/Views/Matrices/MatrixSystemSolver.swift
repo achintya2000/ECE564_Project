@@ -48,8 +48,8 @@ struct MatrixSystemSolver: View {
             
             Button(action: {
                 do {
-                    let myMatrix1 = try Parser(text: self.matrixInput1, rows: self.rows, cols: self.cols).parse()
-                    let myMatrix2 = try Parser(text: self.matrixInput2, rows: self.rows2, cols: self.cols2).parse()
+                    let myMatrix1 = try Parser(text: self.matrixInput1, rows: self.rows, cols: self.cols).parse(square: true)
+                    let myMatrix2 = try Parser(text: self.matrixInput2, rows: self.rows2, cols: self.cols2).parse(square: false)
                     let myMatrix3 = try Surge.inv(myMatrix1)
                     self.result = Surge.mul(myMatrix3, myMatrix2).description
                 } catch {

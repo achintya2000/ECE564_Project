@@ -57,8 +57,8 @@ struct MatrixMulView: View {
             
             Button(action: {
                 do {
-                    let myMatrix1 = try Parser(text: self.matrixInput1, rows: self.rows, cols: self.cols).parse()
-                    let myMatrix2 = try Parser(text: self.matrixInput2, rows: self.rows2, cols: self.cols2).parse()
+                    let myMatrix1 = try Parser(text: self.matrixInput1, rows: self.rows, cols: self.cols).parse(square: false)
+                    let myMatrix2 = try Parser(text: self.matrixInput2, rows: self.rows2, cols: self.cols2).parse(square: false)
                     self.result = Surge.mul(myMatrix1, myMatrix2).description
                 } catch {
                     self.showError.toggle()
