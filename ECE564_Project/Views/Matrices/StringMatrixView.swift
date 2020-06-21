@@ -40,7 +40,7 @@ struct StringMatrixView: View {
             
             Button(action: {
                 do {
-                    let myMatrix = try Parser(text: self.matrixInput, rows: self.rows, cols: self.cols).parse()
+                    let myMatrix = try Parser(text: self.matrixInput, rows: self.rows, cols: self.cols).parse(square: true)
                     switch self.operation {
                     case .Determinent:
                         self.result = String(Surge.det(myMatrix)?.description ?? "Det DNE")
