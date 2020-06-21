@@ -52,16 +52,17 @@ struct MatrixMulView: View {
                     }
                 }
             }.alert(isPresented: self.$showError) {
-                Alert(title: Text("Error"), Text("Please enter a square matrix!"), dismissButton: .default(Text("OK")))
+                Alert(title: Text("Error"), message: Text("Please enter a square matrix!"), dismissButton: .default(Text("OK")))
             }
             
             Button(action: {
                 do {
-                    let myMatrix1 = Parser(text: self.matrixInput1, rows: self.rows, cols: self.cols).parse()
-                    let myMatrix2 = Parser(text: self.matrixInput2, rows: self.rows2, cols: self.cols2).parse()
+                    let myMatrix1 = try Parser(text: self.matrixInput1, rows: self.rows, cols: self.cols).parse()
+                    let myMatrix2 = try Parser(text: self.matrixInput2, rows: self.rows2, cols: self.cols2).parse()
                     self.result = Surge.mul(myMatrix1, myMatrix2).description
                 } catch {
-                    self.$showError = true
+                    self.showError.toggle()
+                    self.result = ""
                 }
             })
             {

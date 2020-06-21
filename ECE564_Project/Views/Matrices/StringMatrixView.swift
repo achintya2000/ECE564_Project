@@ -35,12 +35,12 @@ struct StringMatrixView: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
             }.alert(isPresented: self.$showError) {
-                Alert(title: Text("Error"), Text("Please enter a square matrix!"), dismissButton: .default(Text("OK")))
+                Alert(title: Text("Error"), message: Text("Please enter a square matrix!"), dismissButton: .default(Text("OK")))
             }
             
             Button(action: {
                 do {
-                    let myMatrix = Parser(text: self.matrixInput, rows: self.rows, cols: self.cols).parse()
+                    let myMatrix = try Parser(text: self.matrixInput, rows: self.rows, cols: self.cols).parse()
                     switch self.operation {
                     case .Determinent:
                         self.result = String(Surge.det(myMatrix)?.description ?? "Det DNE")
@@ -54,7 +54,8 @@ struct StringMatrixView: View {
                         
                     }
                 } catch {
-                    self.$showError = true
+                    self.showError.toggle()
+                    self.result = ""
                 }
                 
             })

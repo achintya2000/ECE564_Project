@@ -43,7 +43,7 @@ struct MatrixSystemSolver: View {
                     }
                 }
             }.alert(isPresented: self.$errorPres) {
-                Alert(title: Text("Error"), Text("Please enter a square matrix!"), dismissButton: .default(Text("OK")))
+                Alert(title: Text("Error"), message: Text("Please enter a square matrix!"), dismissButton: .default(Text("OK")))
             }
             
             Button(action: {
@@ -53,7 +53,8 @@ struct MatrixSystemSolver: View {
                     let myMatrix3 = try Surge.inv(myMatrix1)
                     self.result = Surge.mul(myMatrix3, myMatrix2).description
                 } catch {
-                    self.$errorPres = true
+                    self.errorPres.toggle()
+                    self.result = ""
                 }
                 
                 
