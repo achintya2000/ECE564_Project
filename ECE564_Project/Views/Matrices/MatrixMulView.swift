@@ -25,6 +25,7 @@ struct MatrixMulView: View {
     @State var matrixInput2: String = ""
     @State var rows2: Int = 0
     @State var cols2: Int = 0
+    @State var showError: Bool = false
     var body: some View {
         Form {
             Section(header: Text("Matrix 1")){
@@ -50,12 +51,18 @@ struct MatrixMulView: View {
                         TextField("Cols", value: self.$cols2, formatter: NumberFormatter())
                     }
                 }
+            }.alert(isPresented: self.$showError) {
+                Alert(title: Text("Error"), Text("Please enter a square matrix!"), dismissButton: .default(Text("OK")))
             }
             
             Button(action: {
-                let myMatrix1 = Parser(text: self.matrixInput1, rows: self.rows, cols: self.cols).parse()
-                let myMatrix2 = Parser(text: self.matrixInput2, rows: self.rows2, cols: self.cols2).parse()
-                self.result = Surge.mul(myMatrix1, myMatrix2).description
+                do {
+                    let myMatrix1 = Parser(text: self.matrixInput1, rows: self.rows, cols: self.cols).parse()
+                    let myMatrix2 = Parser(text: self.matrixInput2, rows: self.rows2, cols: self.cols2).parse()
+                    self.result = Surge.mul(myMatrix1, myMatrix2).description
+                } catch {
+                    self.$showError = true
+                }
             })
             {
                 Text("Add")

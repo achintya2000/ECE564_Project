@@ -14,6 +14,7 @@ struct StringMatrixView: View {
     @State var matrixInput: String = ""
     @State var rows: Int = 0
     @State var cols: Int = 0
+    @State var showError: Bool = false
     var body: some View {
         Form {
             Section(header: Text("Matrix")){
@@ -33,22 +34,29 @@ struct StringMatrixView: View {
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle())
+            }.alert(isPresented: self.$showError) {
+                Alert(title: Text("Error"), Text("Please enter a square matrix!"), dismissButton: .default(Text("OK")))
             }
             
             Button(action: {
-                let myMatrix = Parser(text: self.matrixInput, rows: self.rows, cols: self.cols).parse()
-                switch self.operation {
-                case .Determinent:
-                    self.result = String(Surge.det(myMatrix)?.description ?? "Det DNE")
-                    break
-                case .Inverse:
-                    self.result = Surge.inv(myMatrix).description
-                    break
-                case .Transpose:
-                    self.result = Surge.transpose(myMatrix).description
-                    break
-                    
+                do {
+                    let myMatrix = Parser(text: self.matrixInput, rows: self.rows, cols: self.cols).parse()
+                    switch self.operation {
+                    case .Determinent:
+                        self.result = String(Surge.det(myMatrix)?.description ?? "Det DNE")
+                        break
+                    case .Inverse:
+                        self.result = Surge.inv(myMatrix).description
+                        break
+                    case .Transpose:
+                        self.result = Surge.transpose(myMatrix).description
+                        break
+                        
+                    }
+                } catch {
+                    self.$showError = true
                 }
+                
             })
             {
                 Text("Submit")
