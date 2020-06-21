@@ -34,6 +34,7 @@ struct SystemSolver: View {
             
             Button(action: {
                 do {
+                    self.dynamicData.removeAll()
                     let eRes = try self.eigenHelper()
                     let eVals = eRes.eigenValues
                     let eVecs = eRes.rightEigenVectors
