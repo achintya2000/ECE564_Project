@@ -155,11 +155,10 @@
 		F7200897249EF06B003A631C /* Matrices */ = {
 			isa = PBXGroup;
 			children = (
-				2B3DD65524996DE2005ED571 /* Parser.swift */,
+				F720089C249EF43D003A631C /* Helpers */,
 				2B796F38249B0A9400F3FCE8 /* MatrixAddView.swift */,
 				2B3DD65324996DE2005ED571 /* StringMatrixView.swift */,
 				F750CC1F24984ADB00F05228 /* MatrixView.swift */,
-				F750CC2124984B0600F05228 /* MatrixSize.swift */,
 				2B0EB1C4249BF00B00C9D9EF /* MatrixSystemSolver.swift */,
 			);
 			path = Matrices;
@@ -190,6 +189,15 @@
 				F771393F24958E3C00B43203 /* CardView.swift */,
 			);
 			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		F720089C249EF43D003A631C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2B3DD65524996DE2005ED571 /* Parser.swift */,
+				F750CC2124984B0600F05228 /* MatrixSize.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		F771391B249586B600B43203 = {

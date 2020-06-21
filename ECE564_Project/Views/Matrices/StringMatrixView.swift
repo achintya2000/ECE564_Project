@@ -54,13 +54,7 @@ struct StringMatrixView: View {
                 Text("Submit")
             }
             Text("\(result)")
-            Text("\(rows.description)")
-            Text("\(cols.description)")
-
-            
         }
-        
-        
     }
 }
 

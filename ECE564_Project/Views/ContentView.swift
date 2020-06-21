@@ -38,7 +38,7 @@ struct ContentView: View {
                         }
                     }
                 }
-                .navigationBarTitle("Hello")
+                .navigationBarTitle("ECE Helper")
             }
             .tabItem {
                 VStack {
@@ -58,12 +58,6 @@ struct ContentView: View {
                 }
                 .tag(1)
         }
-    }
-}
-
-struct TEST: View {
-    var body: some View {
-        Text("This is the detail view")
     }
 }
 
