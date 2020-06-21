@@ -34,7 +34,9 @@ struct AnalyticDiffEq: View {
                 Text("Submit")
                 
             }.sheet(isPresented: $toggleImage) {
-                Image(uiImage: self.display).frame(width: UIScreen.screenWidth*0.9, height: UIScreen.screenHeight*0.8)
+                Image(uiImage: self.display)
+                    .resizable()
+                    .frame(width: UIScreen.screenWidth*0.9, height: UIScreen.screenHeight*0.8)
             }
         }
     }
