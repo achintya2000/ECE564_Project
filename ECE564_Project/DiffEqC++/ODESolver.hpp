@@ -18,12 +18,12 @@ class ODESolver {
 public:
     void HelloFromCPP();
     
-    static void rhs(const double x , double &dxdt , const double t);
-    
+    static void rhs(const double x, double &dxdt, const double t);
+        
     static void write_cout(const double &x , const double t);
     
-    static void dowork(double start, double end);
-    
+    static void dowork(double start, double end, double initialVal);
+        
     static string getOutput();
 };
 

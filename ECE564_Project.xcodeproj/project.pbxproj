@@ -113,7 +113,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F7200873249A912A003A631C /* DiffEq */ = {
+		F7200873249A912A003A631C /* DiffEqC++ */ = {
 			isa = PBXGroup;
 			children = (
 				F7200879249C25A1003A631C /* ODESolver.cpp */,
@@ -122,7 +122,7 @@
 				F720087D249C267F003A631C /* ODESolver_Wrapper.mm */,
 				F7200880249C26DB003A631C /* ODESolver_Wrapper.h */,
 			);
-			path = DiffEq;
+			path = "DiffEqC++";
 			sourceTree = "<group>";
 		};
 		F7200886249EBE9F003A631C /* Frameworks */ = {
@@ -227,7 +227,7 @@
 				F7713927249586B600B43203 /* AppDelegate.swift */,
 				F7713929249586B600B43203 /* SceneDelegate.swift */,
 				F771392D249586B700B43203 /* Assets.xcassets */,
-				F7200873249A912A003A631C /* DiffEq */,
+				F7200873249A912A003A631C /* DiffEqC++ */,
 				F7713932249586B700B43203 /* LaunchScreen.storyboard */,
 				F771393E24958D3D00B43203 /* Models */,
 				F771392F249586B700B43203 /* Preview Content */,
@@ -472,7 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.duke.ECE564.ECE564-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ECE564_Project/DiffEq/ECE564_Project-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ECE564_Project/DiffEqC++/ECE564_Project-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_HEADER_SEARCH_PATHS = "";

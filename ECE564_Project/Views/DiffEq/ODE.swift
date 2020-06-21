@@ -34,7 +34,8 @@ struct ODE: View {
                 }
                 Section(header: Text("Submit")) {
                     Button(action: {
-                        self.result = ODESolver_Wrapper().odeSolver_Solve(self.start, end: self.end)
+                        self.pointsArray.removeAll()
+                        self.result = ODESolver_Wrapper().odeSolver_Solve(self.start, end: self.end, initialVal: self.initial)
                                                 
                         let resultArray = self.result.split(separator: ",")
                                                 
