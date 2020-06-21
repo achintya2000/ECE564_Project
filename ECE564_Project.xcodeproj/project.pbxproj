@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		2B0EB1C5249BF00B00C9D9EF /* MatrixSystemSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0EB1C4249BF00B00C9D9EF /* MatrixSystemSolver.swift */; };
 		2B0EB1C7249D3C5500C9D9EF /* SystemSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0EB1C6249D3C5500C9D9EF /* SystemSolver.swift */; };
-		2B0EB1CE249FF91100C9D9EF /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2B0EB1CD249FF91100C9D9EF /* URLImage */; };
-		2B0EB1D824A0038B00C9D9EF /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0EB1D524A0037A00C9D9EF /* Charts.framework */; };
-		2B0EB1D924A0038B00C9D9EF /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0EB1D524A0037A00C9D9EF /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B3DD65024996CDE005ED571 /* VectorModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD64F24996CDE005ED571 /* VectorModels.swift */; };
 		2B3DD65224996CF8005ED571 /* MoreVectorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD65124996CF8005ED571 /* MoreVectorMath.swift */; };
 		2B3DD65624996DE2005ED571 /* StringMatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD65324996DE2005ED571 /* StringMatrixView.swift */; };
@@ -37,6 +34,8 @@
 		F77139472495B49800B43203 /* Surge in Frameworks */ = {isa = PBXBuildFile; productRef = F77139462495B49800B43203 /* Surge */; };
 		F7713949249828AA00B43203 /* AllOperationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713948249828AA00B43203 /* AllOperationsModel.swift */; };
 		F771394B24982D0900B43203 /* QuicklinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F771394A24982D0900B43203 /* QuicklinksModel.swift */; };
+		F7F4785924A0224A009BB558 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F720088D249EBE9F003A631C /* Charts.framework */; };
+		F7F4785A24A0224A009BB558 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F720088D249EBE9F003A631C /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,13 +70,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2B0EB1DA24A0038B00C9D9EF /* Embed Frameworks */ = {
+		F7F4785B24A0224A009BB558 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2B0EB1D924A0038B00C9D9EF /* Charts.framework in Embed Frameworks */,
+				F7F4785A24A0224A009BB558 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,11 +123,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B0EB1D824A0038B00C9D9EF /* Charts.framework in Frameworks */,
+				F7F4785924A0224A009BB558 /* Charts.framework in Frameworks */,
 				F77139472495B49800B43203 /* Surge in Frameworks */,
-
 				F72008AF24A004C0003A631C /* URLImage in Frameworks */,
-				F7200890249EBEB6003A631C /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +294,7 @@
 				F7713920249586B600B43203 /* Sources */,
 				F7713921249586B600B43203 /* Frameworks */,
 				F7713922249586B600B43203 /* Resources */,
-				2B0EB1DA24A0038B00C9D9EF /* Embed Frameworks */,
+				F7F4785B24A0224A009BB558 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
