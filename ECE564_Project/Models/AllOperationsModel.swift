@@ -40,6 +40,8 @@ class AllOperations {
         
         AllOperations.append(ListItem(title: "Solve System of Differential Equations", destination: AnyView(SystemSolver())))
         
+        AllOperations.append(ListItem(title: "Analytic solutions to Differential Equations", destination: AnyView(AnalyticDiffEq())))
+        
         return AllOperations
     }
 
