@@ -57,8 +57,6 @@ struct ContentView: View {
                     }
                 }
                 .tag(1)
-        }.onAppear() {
-            ODESolver_Wrapper().helloFromCPP_Wrapper()
         }
     }
 }

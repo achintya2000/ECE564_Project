@@ -17,4 +17,11 @@
     odeSolver.HelloFromCPP();
 }
 
+-(NSString*) ODESolver_Solve: (double) start end: (double) end
+{
+    ODESolver odeSolver;
+    odeSolver.dowork(start, end);
+    return @(odeSolver.getOutput().c_str());
+}
+
 @end

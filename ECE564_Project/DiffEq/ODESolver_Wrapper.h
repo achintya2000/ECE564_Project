@@ -15,6 +15,8 @@
 
 -(void) HelloFromCPP_Wrapper;
 
+-(NSString*) ODESolver_Solve: (double) start end: (double) end;
+
 @end
 
 #endif /* ODESolver_Wrapper_h */

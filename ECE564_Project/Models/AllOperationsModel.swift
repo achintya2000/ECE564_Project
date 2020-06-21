@@ -31,7 +31,7 @@ class AllOperations {
         AllOperations.append(ListItem(title: "Basic Matrix Math", destination: AnyView(StringMatrixView())))
         AllOperations.append(ListItem(title: "Matrix Addtion", destination: AnyView(MatrixAddView())))
         AllOperations.append(ListItem(title: "Solve System of Equations", destination: AnyView(SystemSolver())))
-
+        AllOperations.append(ListItem(title: "V Limited 1st order ODE", destination: AnyView(ODE())))
         
         return AllOperations
     }

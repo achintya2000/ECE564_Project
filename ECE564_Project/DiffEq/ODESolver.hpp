@@ -10,10 +10,21 @@
 #define ODESolver_hpp
 
 #include <stdio.h>
+#include <string>
+
+using namespace std;
 
 class ODESolver {
 public:
     void HelloFromCPP();
+    
+    static void rhs(const double x , double &dxdt , const double t);
+    
+    static void write_cout(const double &x , const double t);
+    
+    static void dowork(double start, double end);
+    
+    static string getOutput();
 };
 
 #endif /* ODESolver_hpp */
