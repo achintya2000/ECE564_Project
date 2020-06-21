@@ -73,6 +73,7 @@ struct MoreVectorMath: View {
             Text("< \(output) >")
                 .font(.title)
                 .frame(maxWidth: .infinity, alignment: .center)
+            .navigationBarTitle(Text("More Vector Math"))
         }
     }
 }

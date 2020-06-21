@@ -13,7 +13,14 @@
 		2B3DD65224996CF8005ED571 /* MoreVectorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD65124996CF8005ED571 /* MoreVectorMath.swift */; };
 		2B3DD65624996DE2005ED571 /* StringMatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD65324996DE2005ED571 /* StringMatrixView.swift */; };
 		2B3DD65824996DE2005ED571 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD65524996DE2005ED571 /* Parser.swift */; };
-		2B796F39249B0A9400F3FCE8 /* MatrixAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B796F38249B0A9400F3FCE8 /* MatrixAddView.swift */; };
+		2B796F39249B0A9400F3FCE8 /* MatrixMulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B796F38249B0A9400F3FCE8 /* MatrixMulView.swift */; };
+		F720087B249C25A1003A631C /* ODESolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7200879249C25A1003A631C /* ODESolver.cpp */; };
+		F720087E249C267F003A631C /* ODESolver_Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F720087D249C267F003A631C /* ODESolver_Wrapper.mm */; };
+		F7200882249D7A39003A631C /* ODE.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7200881249D7A39003A631C /* ODE.swift */; };
+		F7200890249EBEB6003A631C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F720088D249EBE9F003A631C /* Charts.framework */; };
+		F7200891249EBEB6003A631C /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F720088D249EBE9F003A631C /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F7200894249EBEED003A631C /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7200893249EBEED003A631C /* LineChart.swift */; };
+		F72008A3249EF5A1003A631C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F72008A0249EF5A1003A631C /* README.md */; };
 		F750CC2024984ADB00F05228 /* MatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750CC1F24984ADB00F05228 /* MatrixView.swift */; };
 		F750CC2224984B0600F05228 /* MatrixSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750CC2124984B0600F05228 /* MatrixSize.swift */; };
 		F7713928249586B600B43203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713927249586B600B43203 /* AppDelegate.swift */; };
@@ -29,6 +36,37 @@
 		F771394B24982D0900B43203 /* QuicklinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F771394A24982D0900B43203 /* QuicklinksModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F720088C249EBE9F003A631C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7200887249EBE9F003A631C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		F720088E249EBE9F003A631C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7200887249EBE9F003A631C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F7200892249EBEB6003A631C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F7200891249EBEB6003A631C /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2B0EB1C4249BF00B00C9D9EF /* MatrixSystemSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSystemSolver.swift; sourceTree = "<group>"; };
 		2B0EB1C6249D3C5500C9D9EF /* SystemSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSolver.swift; sourceTree = "<group>"; };
@@ -36,7 +74,16 @@
 		2B3DD65124996CF8005ED571 /* MoreVectorMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreVectorMath.swift; sourceTree = "<group>"; };
 		2B3DD65324996DE2005ED571 /* StringMatrixView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringMatrixView.swift; sourceTree = "<group>"; };
 		2B3DD65524996DE2005ED571 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		2B796F38249B0A9400F3FCE8 /* MatrixAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixAddView.swift; sourceTree = "<group>"; };
+		2B796F38249B0A9400F3FCE8 /* MatrixMulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMulView.swift; sourceTree = "<group>"; };
+		F7200879249C25A1003A631C /* ODESolver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ODESolver.cpp; sourceTree = "<group>"; };
+		F720087A249C25A1003A631C /* ODESolver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ODESolver.hpp; sourceTree = "<group>"; };
+		F720087C249C25F4003A631C /* ECE564_Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ECE564_Project-Bridging-Header.h"; sourceTree = "<group>"; };
+		F720087D249C267F003A631C /* ODESolver_Wrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ODESolver_Wrapper.mm; sourceTree = "<group>"; };
+		F7200880249C26DB003A631C /* ODESolver_Wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODESolver_Wrapper.h; sourceTree = "<group>"; };
+		F7200881249D7A39003A631C /* ODE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODE.swift; sourceTree = "<group>"; };
+		F7200887249EBE9F003A631C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../Charts-3.5.0/Charts.xcodeproj"; sourceTree = "<group>"; };
+		F7200893249EBEED003A631C /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		F72008A0249EF5A1003A631C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F750CC1F24984ADB00F05228 /* MatrixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixView.swift; sourceTree = "<group>"; };
 		F750CC2124984B0600F05228 /* MatrixSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSize.swift; sourceTree = "<group>"; };
 		F7713924249586B600B43203 /* ECE564_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECE564_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,17 +106,109 @@
 			buildActionMask = 2147483647;
 			files = (
 				F77139472495B49800B43203 /* Surge in Frameworks */,
+				F7200890249EBEB6003A631C /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7200873249A912A003A631C /* DiffEqC++ */ = {
+			isa = PBXGroup;
+			children = (
+				F7200879249C25A1003A631C /* ODESolver.cpp */,
+				F720087A249C25A1003A631C /* ODESolver.hpp */,
+				F720087C249C25F4003A631C /* ECE564_Project-Bridging-Header.h */,
+				F720087D249C267F003A631C /* ODESolver_Wrapper.mm */,
+				F7200880249C26DB003A631C /* ODESolver_Wrapper.h */,
+			);
+			path = "DiffEqC++";
+			sourceTree = "<group>";
+		};
+		F7200886249EBE9F003A631C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7200887249EBE9F003A631C /* Charts.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7200888249EBE9F003A631C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F720088D249EBE9F003A631C /* Charts.framework */,
+				F720088F249EBE9F003A631C /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7200896249EF050003A631C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F771392B249586B600B43203 /* ContentView.swift */,
+				F720089A249EF0BD003A631C /* HelperViews */,
+				F7200899249EF0B2003A631C /* DiffEq */,
+				F7200898249EF085003A631C /* Vectors */,
+				F7200897249EF06B003A631C /* Matrices */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7200897249EF06B003A631C /* Matrices */ = {
+			isa = PBXGroup;
+			children = (
+				F720089C249EF43D003A631C /* Helpers */,
+				2B796F38249B0A9400F3FCE8 /* MatrixMulView.swift */,
+				2B3DD65324996DE2005ED571 /* StringMatrixView.swift */,
+				F750CC1F24984ADB00F05228 /* MatrixView.swift */,
+				2B0EB1C4249BF00B00C9D9EF /* MatrixSystemSolver.swift */,
+			);
+			path = Matrices;
+			sourceTree = "<group>";
+		};
+		F7200898249EF085003A631C /* Vectors */ = {
+			isa = PBXGroup;
+			children = (
+				F77139432495AB1200B43203 /* VectorMath.swift */,
+				2B3DD65124996CF8005ED571 /* MoreVectorMath.swift */,
+			);
+			path = Vectors;
+			sourceTree = "<group>";
+		};
+		F7200899249EF0B2003A631C /* DiffEq */ = {
+			isa = PBXGroup;
+			children = (
+				F7200881249D7A39003A631C /* ODE.swift */,
+				2B0EB1C6249D3C5500C9D9EF /* SystemSolver.swift */,
+			);
+			path = DiffEq;
+			sourceTree = "<group>";
+		};
+		F720089A249EF0BD003A631C /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				F7200893249EBEED003A631C /* LineChart.swift */,
+				F771393F24958E3C00B43203 /* CardView.swift */,
+			);
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		F720089C249EF43D003A631C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2B3DD65524996DE2005ED571 /* Parser.swift */,
+				F750CC2124984B0600F05228 /* MatrixSize.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		F771391B249586B600B43203 = {
 			isa = PBXGroup;
 			children = (
+				F72008A0249EF5A1003A631C /* README.md */,
 				F7713926249586B600B43203 /* ECE564_Project */,
 				F7713925249586B600B43203 /* Products */,
+				F7200886249EBE9F003A631C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,24 +223,15 @@
 		F7713926249586B600B43203 /* ECE564_Project */ = {
 			isa = PBXGroup;
 			children = (
-				2B3DD65524996DE2005ED571 /* Parser.swift */,
-				2B3DD65324996DE2005ED571 /* StringMatrixView.swift */,
-				2B3DD65124996CF8005ED571 /* MoreVectorMath.swift */,
 				F7713935249586B700B43203 /* Info.plist */,
 				F7713927249586B600B43203 /* AppDelegate.swift */,
-				F771393F24958E3C00B43203 /* CardView.swift */,
-				F771392B249586B600B43203 /* ContentView.swift */,
 				F7713929249586B600B43203 /* SceneDelegate.swift */,
-				F77139432495AB1200B43203 /* VectorMath.swift */,
 				F771392D249586B700B43203 /* Assets.xcassets */,
+				F7200873249A912A003A631C /* DiffEqC++ */,
 				F7713932249586B700B43203 /* LaunchScreen.storyboard */,
 				F771393E24958D3D00B43203 /* Models */,
 				F771392F249586B700B43203 /* Preview Content */,
-				F750CC1F24984ADB00F05228 /* MatrixView.swift */,
-				F750CC2124984B0600F05228 /* MatrixSize.swift */,
-				2B796F38249B0A9400F3FCE8 /* MatrixAddView.swift */,
-				2B0EB1C4249BF00B00C9D9EF /* MatrixSystemSolver.swift */,
-				2B0EB1C6249D3C5500C9D9EF /* SystemSolver.swift */,
+				F7200896249EF050003A631C /* Views */,
 			);
 			path = ECE564_Project;
 			sourceTree = "<group>";
@@ -134,6 +264,7 @@
 				F7713920249586B600B43203 /* Sources */,
 				F7713921249586B600B43203 /* Frameworks */,
 				F7713922249586B600B43203 /* Resources */,
+				F7200892249EBEB6003A631C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +290,7 @@
 				TargetAttributes = {
 					F7713923249586B600B43203 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -176,12 +308,35 @@
 			);
 			productRefGroup = F7713925249586B600B43203 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F7200888249EBE9F003A631C /* Products */;
+					ProjectRef = F7200887249EBE9F003A631C /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F7713923249586B600B43203 /* ECE564_Project */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F720088D249EBE9F003A631C /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = F720088C249EBE9F003A631C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F720088F249EBE9F003A631C /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = F720088E249EBE9F003A631C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F7713922249586B600B43203 /* Resources */ = {
@@ -190,6 +345,7 @@
 			files = (
 				F7713934249586B700B43203 /* LaunchScreen.storyboard in Resources */,
 				F7713931249586B700B43203 /* Preview Assets.xcassets in Resources */,
+				F72008A3249EF5A1003A631C /* README.md in Resources */,
 				F771392E249586B700B43203 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +358,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7713928249586B600B43203 /* AppDelegate.swift in Sources */,
+				F720087E249C267F003A631C /* ODESolver_Wrapper.mm in Sources */,
+				F720087B249C25A1003A631C /* ODESolver.cpp in Sources */,
+				F7200882249D7A39003A631C /* ODE.swift in Sources */,
+				F7200894249EBEED003A631C /* LineChart.swift in Sources */,
 				F771392A249586B600B43203 /* SceneDelegate.swift in Sources */,
 				2B3DD65024996CDE005ED571 /* VectorModels.swift in Sources */,
 				F750CC2224984B0600F05228 /* MatrixSize.swift in Sources */,
@@ -213,7 +373,7 @@
 				2B0EB1C5249BF00B00C9D9EF /* MatrixSystemSolver.swift in Sources */,
 				F771394B24982D0900B43203 /* QuicklinksModel.swift in Sources */,
 				F771392C249586B600B43203 /* ContentView.swift in Sources */,
-				2B796F39249B0A9400F3FCE8 /* MatrixAddView.swift in Sources */,
+				2B796F39249B0A9400F3FCE8 /* MatrixMulView.swift in Sources */,
 				2B0EB1C7249D3C5500C9D9EF /* SystemSolver.swift in Sources */,
 				2B3DD65224996CF8005ED571 /* MoreVectorMath.swift in Sources */,
 				F7713949249828AA00B43203 /* AllOperationsModel.swift in Sources */,
@@ -294,67 +454,16 @@
 			};
 			name = Debug;
 		};
-		F7713937249586B700B43203 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		F7713939249586B700B43203 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ECE564_Project/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.72.0_3/include/;
 				INFOPLIST_FILE = ECE564_Project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,30 +472,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.duke.ECE564.ECE564-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ECE564_Project/DiffEqC++/ECE564_Project-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		F771393A249586B700B43203 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ECE564_Project/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.72.0_3/include/;
-				INFOPLIST_FILE = ECE564_Project/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.duke.ECE564.ECE564-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -395,19 +487,17 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7713936249586B700B43203 /* Debug */,
-				F7713937249586B700B43203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		F7713938249586B700B43203 /* Build configuration list for PBXNativeTarget "ECE564_Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7713939249586B700B43203 /* Debug */,
-				F771393A249586B700B43203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

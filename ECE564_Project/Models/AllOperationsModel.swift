@@ -27,11 +27,18 @@ class AllOperations {
         var AllOperations = [ListItem]()
         
         AllOperations.append(ListItem(title: "Basic Vector Math", destination: AnyView(VectorMath())))
+        
         AllOperations.append(ListItem(title: "More Vector Math", destination: AnyView(MoreVectorMath())))
+        
         AllOperations.append(ListItem(title: "Basic Matrix Math", destination: AnyView(StringMatrixView())))
-        AllOperations.append(ListItem(title: "Matrix Addtion", destination: AnyView(MatrixAddView())))
-        AllOperations.append(ListItem(title: "Solve System of Equations", destination: AnyView(SystemSolver())))
-
+        
+        AllOperations.append(ListItem(title: "Matrix Multiplication", destination: AnyView(MatrixMulView())))
+        
+        AllOperations.append(ListItem(title: "Solve System of Equations", destination: AnyView(MatrixSystemSolver())))
+        
+        AllOperations.append(ListItem(title: "V Limited 1st order ODE", destination: AnyView(ODE())))
+        
+        AllOperations.append(ListItem(title: "Solve System of Differential Equations", destination: AnyView(SystemSolver())))
         
         return AllOperations
     }
