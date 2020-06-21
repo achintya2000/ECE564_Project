@@ -20,6 +20,7 @@
 		F7200890249EBEB6003A631C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F720088D249EBE9F003A631C /* Charts.framework */; };
 		F7200891249EBEB6003A631C /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F720088D249EBE9F003A631C /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F7200894249EBEED003A631C /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7200893249EBEED003A631C /* LineChart.swift */; };
+		F72008A3249EF5A1003A631C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F72008A0249EF5A1003A631C /* README.md */; };
 		F750CC2024984ADB00F05228 /* MatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750CC1F24984ADB00F05228 /* MatrixView.swift */; };
 		F750CC2224984B0600F05228 /* MatrixSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750CC2124984B0600F05228 /* MatrixSize.swift */; };
 		F7713928249586B600B43203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713927249586B600B43203 /* AppDelegate.swift */; };
@@ -82,6 +83,7 @@
 		F7200881249D7A39003A631C /* ODE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODE.swift; sourceTree = "<group>"; };
 		F7200887249EBE9F003A631C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../Charts-3.5.0/Charts.xcodeproj"; sourceTree = "<group>"; };
 		F7200893249EBEED003A631C /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		F72008A0249EF5A1003A631C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F750CC1F24984ADB00F05228 /* MatrixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixView.swift; sourceTree = "<group>"; };
 		F750CC2124984B0600F05228 /* MatrixSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSize.swift; sourceTree = "<group>"; };
 		F7713924249586B600B43203 /* ECE564_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECE564_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +205,7 @@
 		F771391B249586B600B43203 = {
 			isa = PBXGroup;
 			children = (
+				F72008A0249EF5A1003A631C /* README.md */,
 				F7713926249586B600B43203 /* ECE564_Project */,
 				F7713925249586B600B43203 /* Products */,
 				F7200886249EBE9F003A631C /* Frameworks */,
@@ -342,6 +345,7 @@
 			files = (
 				F7713934249586B700B43203 /* LaunchScreen.storyboard in Resources */,
 				F7713931249586B700B43203 /* Preview Assets.xcassets in Resources */,
+				F72008A3249EF5A1003A631C /* README.md in Resources */,
 				F771392E249586B700B43203 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
