@@ -55,6 +55,7 @@ struct StringMatrixView: View {
             }
             Text("\(result)")
         }
+        .navigationBarTitle(Text("Basic Matrix Math"))
     }
 }
 

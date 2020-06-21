@@ -39,14 +39,9 @@ struct MatrixSystemSolver: View {
                 Section(header: Text("Row")) {
                     HStack {
                         TextField("Rows", value: self.$rows2, formatter: NumberFormatter())
-    
                     }
-                
                 }
-                
-                }
-            
-            
+            }
             
             Button(action: {
                 let myMatrix1 = Parser(text: self.matrixInput1, rows: self.rows, cols: self.cols).parse()
@@ -59,12 +54,8 @@ struct MatrixSystemSolver: View {
                 Text("Solve")
             }
             Text("\(result)")
-            
-
-            
         }
-        
-        
+    .navigationBarTitle(Text("System of Equations"))
     }
 }
 struct MatrixSystemSolver_Previews: PreviewProvider {

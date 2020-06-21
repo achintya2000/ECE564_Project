@@ -13,7 +13,7 @@
 		2B3DD65224996CF8005ED571 /* MoreVectorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD65124996CF8005ED571 /* MoreVectorMath.swift */; };
 		2B3DD65624996DE2005ED571 /* StringMatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD65324996DE2005ED571 /* StringMatrixView.swift */; };
 		2B3DD65824996DE2005ED571 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3DD65524996DE2005ED571 /* Parser.swift */; };
-		2B796F39249B0A9400F3FCE8 /* MatrixAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B796F38249B0A9400F3FCE8 /* MatrixAddView.swift */; };
+		2B796F39249B0A9400F3FCE8 /* MatrixMulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B796F38249B0A9400F3FCE8 /* MatrixMulView.swift */; };
 		F720087B249C25A1003A631C /* ODESolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7200879249C25A1003A631C /* ODESolver.cpp */; };
 		F720087E249C267F003A631C /* ODESolver_Wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F720087D249C267F003A631C /* ODESolver_Wrapper.mm */; };
 		F7200882249D7A39003A631C /* ODE.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7200881249D7A39003A631C /* ODE.swift */; };
@@ -74,7 +74,7 @@
 		2B3DD65124996CF8005ED571 /* MoreVectorMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreVectorMath.swift; sourceTree = "<group>"; };
 		2B3DD65324996DE2005ED571 /* StringMatrixView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringMatrixView.swift; sourceTree = "<group>"; };
 		2B3DD65524996DE2005ED571 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		2B796F38249B0A9400F3FCE8 /* MatrixAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixAddView.swift; sourceTree = "<group>"; };
+		2B796F38249B0A9400F3FCE8 /* MatrixMulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMulView.swift; sourceTree = "<group>"; };
 		F7200879249C25A1003A631C /* ODESolver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ODESolver.cpp; sourceTree = "<group>"; };
 		F720087A249C25A1003A631C /* ODESolver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ODESolver.hpp; sourceTree = "<group>"; };
 		F720087C249C25F4003A631C /* ECE564_Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ECE564_Project-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				F720089C249EF43D003A631C /* Helpers */,
-				2B796F38249B0A9400F3FCE8 /* MatrixAddView.swift */,
+				2B796F38249B0A9400F3FCE8 /* MatrixMulView.swift */,
 				2B3DD65324996DE2005ED571 /* StringMatrixView.swift */,
 				F750CC1F24984ADB00F05228 /* MatrixView.swift */,
 				2B0EB1C4249BF00B00C9D9EF /* MatrixSystemSolver.swift */,
@@ -373,7 +373,7 @@
 				2B0EB1C5249BF00B00C9D9EF /* MatrixSystemSolver.swift in Sources */,
 				F771394B24982D0900B43203 /* QuicklinksModel.swift in Sources */,
 				F771392C249586B600B43203 /* ContentView.swift in Sources */,
-				2B796F39249B0A9400F3FCE8 /* MatrixAddView.swift in Sources */,
+				2B796F39249B0A9400F3FCE8 /* MatrixMulView.swift in Sources */,
 				2B0EB1C7249D3C5500C9D9EF /* SystemSolver.swift in Sources */,
 				2B3DD65224996CF8005ED571 /* MoreVectorMath.swift in Sources */,
 				F7713949249828AA00B43203 /* AllOperationsModel.swift in Sources */,

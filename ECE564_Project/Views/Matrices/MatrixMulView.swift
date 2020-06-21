@@ -16,7 +16,7 @@
 
 import SwiftUI
 import Surge
-struct MatrixAddView: View {
+struct MatrixMulView: View {
     @State var operation: MatrixOperation = .Determinent
     @State var result: String = ""
     @State var matrixInput1: String = ""
@@ -49,33 +49,25 @@ struct MatrixAddView: View {
                         TextField("Rows", value: self.$rows2, formatter: NumberFormatter())
                         TextField("Cols", value: self.$cols2, formatter: NumberFormatter())
                     }
-                
                 }
-                
-                }
-            
-            
+            }
             
             Button(action: {
                 let myMatrix1 = Parser(text: self.matrixInput1, rows: self.rows, cols: self.cols).parse()
                 let myMatrix2 = Parser(text: self.matrixInput2, rows: self.rows2, cols: self.cols2).parse()
-                self.result = Surge.add(myMatrix1, myMatrix2).description
+                self.result = Surge.mul(myMatrix1, myMatrix2).description
             })
             {
                 Text("Add")
             }
             Text("\(result)")
-            
-
-            
         }
-        
-        
+    .navigationBarTitle(Text("Matrix Multiplication"))
     }
 }
 
 struct MatrixAddView_Previews: PreviewProvider {
     static var previews: some View {
-        MatrixAddView()
+        MatrixMulView()
     }
 }

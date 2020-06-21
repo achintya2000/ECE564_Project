@@ -61,20 +61,13 @@ struct SystemSolver: View {
                     .baselineOffset(6.0) +
                     Text("\(ind.numEVecs.description)")
             }
-            
-            
-            
-
-            
         }
-        
-        
+        .navigationBarTitle(Text("Systems of Diff Eqns"))
     }
+    
     func eigenHelper() throws -> MatrixEigenDecompositionResult<Double>{
         let myMatrix = Parser(text: self.matrixInput, rows: self.rows, cols: self.cols).parse()
         return try Surge.eigenDecompose(myMatrix)
-        
-        
     }
 }
 

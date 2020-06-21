@@ -51,6 +51,7 @@ struct ODE: View {
                         Line(entries: self.$pointsArray).frame(height: UIScreen.screenHeight * 0.5)
                     }
                 }
+                .navigationBarTitle(Text("1st Order ODE (Limited)"))
             }
         }
     }
