@@ -21,6 +21,8 @@
 		F7200891249EBEB6003A631C /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F720088D249EBE9F003A631C /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F7200894249EBEED003A631C /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7200893249EBEED003A631C /* LineChart.swift */; };
 		F72008A3249EF5A1003A631C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F72008A0249EF5A1003A631C /* README.md */; };
+		F72008AF24A004C0003A631C /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = F72008AE24A004C0003A631C /* URLImage */; };
+		F72008B324A004D7003A631C /* AnalyticDiffEq.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72008B224A004D7003A631C /* AnalyticDiffEq.swift */; };
 		F750CC2024984ADB00F05228 /* MatrixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750CC1F24984ADB00F05228 /* MatrixView.swift */; };
 		F750CC2224984B0600F05228 /* MatrixSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750CC2124984B0600F05228 /* MatrixSize.swift */; };
 		F7713928249586B600B43203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713927249586B600B43203 /* AppDelegate.swift */; };
@@ -84,6 +86,7 @@
 		F7200887249EBE9F003A631C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../Charts-3.5.0/Charts.xcodeproj"; sourceTree = "<group>"; };
 		F7200893249EBEED003A631C /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 		F72008A0249EF5A1003A631C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F72008B224A004D7003A631C /* AnalyticDiffEq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticDiffEq.swift; sourceTree = "<group>"; };
 		F750CC1F24984ADB00F05228 /* MatrixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixView.swift; sourceTree = "<group>"; };
 		F750CC2124984B0600F05228 /* MatrixSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSize.swift; sourceTree = "<group>"; };
 		F7713924249586B600B43203 /* ECE564_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECE564_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F77139472495B49800B43203 /* Surge in Frameworks */,
+				F72008AF24A004C0003A631C /* URLImage in Frameworks */,
 				F7200890249EBEB6003A631C /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +184,7 @@
 			children = (
 				F7200881249D7A39003A631C /* ODE.swift */,
 				2B0EB1C6249D3C5500C9D9EF /* SystemSolver.swift */,
+				F72008B224A004D7003A631C /* AnalyticDiffEq.swift */,
 			);
 			path = DiffEq;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 			name = ECE564_Project;
 			packageProductDependencies = (
 				F77139462495B49800B43203 /* Surge */,
+				F72008AE24A004C0003A631C /* URLImage */,
 			);
 			productName = ECE564_Project;
 			productReference = F7713924249586B600B43203 /* ECE564_Project.app */;
@@ -305,6 +311,7 @@
 			mainGroup = F771391B249586B600B43203;
 			packageReferences = (
 				F77139452495B49800B43203 /* XCRemoteSwiftPackageReference "Surge" */,
+				F72008AD24A004C0003A631C /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = F7713925249586B600B43203 /* Products */;
 			projectDirPath = "";
@@ -375,6 +382,7 @@
 				F771392C249586B600B43203 /* ContentView.swift in Sources */,
 				2B796F39249B0A9400F3FCE8 /* MatrixMulView.swift in Sources */,
 				2B0EB1C7249D3C5500C9D9EF /* SystemSolver.swift in Sources */,
+				F72008B324A004D7003A631C /* AnalyticDiffEq.swift in Sources */,
 				2B3DD65224996CF8005ED571 /* MoreVectorMath.swift in Sources */,
 				F7713949249828AA00B43203 /* AllOperationsModel.swift in Sources */,
 			);
@@ -502,6 +510,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F72008AD24A004C0003A631C /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.15;
+			};
+		};
 		F77139452495B49800B43203 /* XCRemoteSwiftPackageReference "Surge" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Jounce/Surge.git";
@@ -513,6 +529,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F72008AE24A004C0003A631C /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F72008AD24A004C0003A631C /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
 		F77139462495B49800B43203 /* Surge */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F77139452495B49800B43203 /* XCRemoteSwiftPackageReference "Surge" */;
