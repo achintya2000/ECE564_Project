@@ -19,6 +19,9 @@ class Parser {
     }
     
     func parse() throws -> Matrix<Double> {
+        if self.rows != self.cols {
+            throw "Must be square matrix"
+        }
         let lines = self.text.components(separatedBy: .whitespacesAndNewlines)
         var grid: [Double] = []
         for entry in lines {
@@ -28,4 +31,7 @@ class Parser {
         print(ret)
         return ret
     }
+}
+extension String:LocalizedError {
+    public var errorDescription: String? { return self }
 }

@@ -16,6 +16,7 @@ struct SystemSolver: View {
     @State var dynamicData: [DynamicData] = []
     @State private var numEVals: [(Double, Double)] = []
     @State private var numEVecs: [(Double, Double)] = []
+    @State var showError: Bool = false
     var body: some View {
         Form {
             Section(header: Text("Matrix")){
@@ -27,6 +28,8 @@ struct SystemSolver: View {
                     TextField("Cols", value: self.$cols, formatter: NumberFormatter())
                 }
             
+            }.alert(isPresented: self.$showError) {
+                Alert(title: Text("Error"), message: Text("Please enter a square matrix!"), dismissButton: .default(Text("OK")))
             }
             
             Button(action: {
@@ -47,7 +50,8 @@ struct SystemSolver: View {
                     }
                     self.result = resi
                 } catch {
-                    print("Error")
+                    self.showError.toggle()
+                    self.result = ""
                 }
                 
             })
@@ -66,8 +70,13 @@ struct SystemSolver: View {
     }
     
     func eigenHelper() throws -> MatrixEigenDecompositionResult<Double>{
-        let myMatrix = Parser(text: self.matrixInput, rows: self.rows, cols: self.cols).parse()
-        return try Surge.eigenDecompose(myMatrix)
+        do {
+            let myMatrix = try Parser(text: self.matrixInput, rows: self.rows, cols: self.cols).parse()
+            return try Surge.eigenDecompose(myMatrix)
+        } catch {
+            self.showError.toggle()
+        }
+        return try Surge.eigenDecompose(Matrix.identity(size: 3))
     }
 }
 
