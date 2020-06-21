@@ -71,7 +71,7 @@ struct SystemSolver: View {
     
     func eigenHelper() throws -> MatrixEigenDecompositionResult<Double>{
         do {
-            let myMatrix = try Parser(text: self.matrixInput, rows: self.rows, cols: self.cols).parse()
+            let myMatrix = try Parser(text: self.matrixInput, rows: self.rows, cols: self.cols).parse(square: true)
             return try Surge.eigenDecompose(myMatrix)
         } catch {
             self.showError.toggle()
