@@ -23,13 +23,14 @@ struct AnalyticDiffEq: View {
             Button(action: {
                 self.equation = self.equation.replacingOccurrences(of: "+", with: "%2b")
                 self.getURL = self.getURL + self.equation
-                print(self.getURL)
-//
+                //print(self.getURL)
+
                 self.toggleImage.toggle()
                 
-                let result = self.getURL.filter { !$0.isWhitespace }
-                
-                self.dowork(url: "http://api.wolframalpha.com/v1/simple?appid=XG7L3G-WJ66P2PLJP&i=y''%2by'=0")
+                var result = self.getURL.filter { !$0.isWhitespace }
+                result = result.replacingOccurrences(of: "’", with: "'")
+                //print(result)
+                self.dowork(url: result)
             }) {
                 Text("Submit")
                 
@@ -37,16 +38,17 @@ struct AnalyticDiffEq: View {
                 Image(uiImage: self.display)
                     .resizable()
                     .frame(width: UIScreen.screenWidth*0.9, height: UIScreen.screenHeight*0.8)
+                //URLImage(URLRequest(url: URL(string: "http://api.wolframalpha.com/v1/simple?appid=XG7L3G-WJ66P2PLJP&i=y''%2by'=0")!))
             }
         }
     }
     
     func dowork(url: String) -> Void {
-        let catPictureURL = URL(string: url)!
+        let catPictureURL = URL(string: url)
         
         let session = URLSession(configuration: .default)
 
-        let downloadPicTask = session.dataTask(with: catPictureURL) { (data, response, error) in
+        let downloadPicTask = session.dataTask(with: catPictureURL!) { (data, response, error) in
             
             if let e = error {
                 print("Error downloading cat picture: \(e)")
