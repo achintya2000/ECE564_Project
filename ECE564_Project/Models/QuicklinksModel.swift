@@ -30,11 +30,11 @@ class QuicklinksModel {
 
         quickLinksModel.append(quickLinkPair(card: CardView(category: "Vectors", heading: "Find the Cross Product of Two Vectors", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255)), destination: AnyView(MoreVectorMath())))
         
-        quickLinksModel.append(quickLinkPair(card: CardView(category: "Linear Algebra", heading: "Basic matrix math", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255)), destination: AnyView(StringMatrixView())))
-        
-        quickLinksModel.append(quickLinkPair(card: CardView(category: "Linear Algebra", heading: "Add two matrices", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255)), destination: AnyView(MatrixMulView())))
-        
-        quickLinksModel.append(quickLinkPair(card: CardView(category: "Linear Algebra", heading: "Solve system of equations", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255)), destination: AnyView(MatrixSystemSolver())))
+//        quickLinksModel.append(quickLinkPair(card: CardView(category: "Linear Algebra", heading: "Basic matrix math", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255)), destination: AnyView(StringMatrixView())))
+//        
+//        quickLinksModel.append(quickLinkPair(card: CardView(category: "Linear Algebra", heading: "Add two matrices", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255)), destination: AnyView(MatrixMulView())))
+//        
+//        quickLinksModel.append(quickLinkPair(card: CardView(category: "Linear Algebra", heading: "Solve system of equations", caption: "Quicklink to calculator", color: Color.init(red: 255/255, green: 153/255, blue: 153/255)), destination: AnyView(MatrixSystemSolver())))
     
         return quickLinksModel
     }

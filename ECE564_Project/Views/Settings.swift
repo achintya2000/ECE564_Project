@@ -9,8 +9,23 @@
 import SwiftUI
 
 struct Settings: View {
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                Toggle(isOn: Binding<Bool>(
+                    get: { UserDefaults.standard.integer(forKey: "LastStyle") !=
+                                UIUserInterfaceStyle.light.rawValue },
+                    set: {
+                        SceneDelegate.shared?.window!.overrideUserInterfaceStyle = $0 ? .dark : .light
+                        UserDefaults.standard.setValue($0 ? UIUserInterfaceStyle.dark.rawValue : UIUserInterfaceStyle.light.rawValue, forKey: "LastStyle")
+                    }
+                 )) {
+                     Text("Toggle Color Mode")
+                }
+            }
+            .navigationBarTitle(Text("Settings"))
+        }
     }
 }
 
