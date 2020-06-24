@@ -48,7 +48,7 @@ struct ContentView: View {
             }
             .tag(0)
             
-            Text("Second View")
+            Settings()
                 .font(.title)
                 .tabItem {
                     VStack {

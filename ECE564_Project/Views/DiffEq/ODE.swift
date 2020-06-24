@@ -58,8 +58,8 @@ struct ODE: View {
     }
 }
 
-struct ODE_Previews: PreviewProvider {
-    static var previews: some View {
-        ODE()
-    }
-}
+//struct ODE_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ODE()
+//    }
+//}

@@ -36,6 +36,7 @@
 		F771394B24982D0900B43203 /* QuicklinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F771394A24982D0900B43203 /* QuicklinksModel.swift */; };
 		F7F4785924A0224A009BB558 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F720088D249EBE9F003A631C /* Charts.framework */; };
 		F7F4785A24A0224A009BB558 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F720088D249EBE9F003A631C /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F7F4786424A2D3A2009BB558 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F4786324A2D3A2009BB558 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		F77139432495AB1200B43203 /* VectorMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorMath.swift; sourceTree = "<group>"; };
 		F7713948249828AA00B43203 /* AllOperationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOperationsModel.swift; sourceTree = "<group>"; };
 		F771394A24982D0900B43203 /* QuicklinksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicklinksModel.swift; sourceTree = "<group>"; };
+		F7F4786324A2D3A2009BB558 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				F7200899249EF0B2003A631C /* DiffEq */,
 				F7200898249EF085003A631C /* Vectors */,
 				F7200897249EF06B003A631C /* Matrices */,
+				F7F4786324A2D3A2009BB558 /* Settings.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				2B0EB1C7249D3C5500C9D9EF /* SystemSolver.swift in Sources */,
 				F72008B324A004D7003A631C /* AnalyticDiffEq.swift in Sources */,
 				2B3DD65224996CF8005ED571 /* MoreVectorMath.swift in Sources */,
+				F7F4786424A2D3A2009BB558 /* Settings.swift in Sources */,
 				F7713949249828AA00B43203 /* AllOperationsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
