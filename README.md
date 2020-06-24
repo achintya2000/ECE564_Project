@@ -5,10 +5,17 @@
 
 ### Authors: Achintya Kumar, Sebastian Williams
 
+## IMPORTANT INSTALLATION INFORMATION
+
 External Libraries User:
 1. https://github.com/Jounce/Surge
 2. http://headmyshoulder.github.io/odeint-v2/index.html
 3. https://github.com/danielgindi/Charts
+
+* Please make sure after cloning the repo you ensure that it builds. If you you can re-add the framework by going to  File->Swift Packages and pasting the link here: https://github.com/Jounce/Surge.git
+* C++ -> Please "brew install boost" and then add it to the ECE564_Project Target under "Header Search Paths." For example I pasted in this: /usr/local/Cellar/boost/1.72.0_3/include/ to my header search path.
+* Finally the Charts API. If it doesn't work straight away, please clone the repo and then in the ECE564_Project Target, click + under "Frameworks, libraries, and Embedded Content." Click the dropdown and click "Add Files." Then navigate to where you cloned the Charts repo and add the .xcodeproj files. After doing this click the + button again and you should be able to see the Charts.framework file. After adding that it should work.
+
 
 Resources:
 1. Wolfram Alpha API
