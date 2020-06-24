@@ -43,3 +43,7 @@ Analytic solution
 * Utilizes wolfram alpha api to get image of analytic solution to input equation. Encountered bug with optionals not being able to unwrap a string passed to a URL. So currently limited to the hardcoded equation we have.
 
 
+Bugs/Known Warnings:
+* These warnings are unrelated to our project but rather the Surge library. We were not able to get rid of them as we needed Surge
+to perform some of the more complicated parts of Accelerate, like solving systems of equations
+* You HAVE to press enter when you enter a number into one of the TextFields. For whatever reason, SwiftUI doesn't require that for straight text but does for numbers
