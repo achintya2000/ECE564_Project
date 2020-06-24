@@ -47,7 +47,7 @@ Systems of Differential Equations
 * Solve systems of differential equations through eigenvalue decomonpostions. Finds the eigenvalue and eigenvector.
 
 Analytic solution 
-* Utilizes wolfram alpha api to get image of analytic solution to input equation. Encountered bug with optionals not being able to unwrap a string passed to a URL. So currently limited to the hardcoded equation we have.
+* Utilizes wolfram alpha api to get image of analytic solution to input equation. Encountered bug with optionals not being able to unwrap a string passed to a URL. So currently limited to the hardcoded equation we have. THIS BUG HAS BEEN FIXED. Can now submit any analytical equation.
 
 
 Bugs/Known Warnings:
