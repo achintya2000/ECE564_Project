@@ -16,6 +16,8 @@
 
 import SwiftUI
 import Surge
+
+// View for multiplying two matrices
 struct MatrixMulView: View {
     @State var operation: MatrixOperation = .Determinent
     @State var result: String = ""

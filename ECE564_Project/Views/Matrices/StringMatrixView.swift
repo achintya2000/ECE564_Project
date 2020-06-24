@@ -8,6 +8,8 @@
 
 import SwiftUI
 import Surge
+
+// Class for doing basic matrix operations, like determinant, tranpose, and inverse
 struct StringMatrixView: View {
     @State var operation: MatrixOperation = .Determinent
     @State var result: String = ""

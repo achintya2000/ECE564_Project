@@ -7,6 +7,8 @@
 //
 
 import Foundation
+
+// Class that implements ObservableObject to ensure changes in Matrix refresh the view
 class MatrixSize: ObservableObject {
     @Published var numRow: [Int] = [0]
     @Published var numCol: [Int] = [0]

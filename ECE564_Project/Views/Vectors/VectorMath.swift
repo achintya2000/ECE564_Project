@@ -11,6 +11,7 @@ import Accelerate
 import simd
 import Surge
 
+// View for doing basic VectorMath, like elementwise add, sub, div, mul
 struct VectorMath: View {
     @State var output = ""
     @State var operation : BasicOperation = .Add

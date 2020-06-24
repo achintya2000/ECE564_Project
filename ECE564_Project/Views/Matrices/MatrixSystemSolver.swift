@@ -8,6 +8,8 @@
 
 import SwiftUI
 import Surge
+
+// View for solving algebric system of equations
 struct MatrixSystemSolver: View {
     @State var operation: MatrixOperation = .Determinent
     @State var result: String = ""

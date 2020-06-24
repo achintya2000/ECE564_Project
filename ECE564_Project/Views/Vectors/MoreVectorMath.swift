@@ -10,6 +10,7 @@ import SwiftUI
 import Surge
 import simd
 
+// View for dot product and cross product of vectors
 struct MoreVectorMath: View {
     @State var output = ""
     @State var operation : AdvancedOperation = .Dot

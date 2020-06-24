@@ -8,6 +8,8 @@
 
 import Foundation
 import Surge
+
+// Helper class to parse input from textfield and make into matrix
 class Parser {
     private let text: String
     private let rows: Int
