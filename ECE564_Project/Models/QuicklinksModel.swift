@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-
+// Similiar to AllOperationsModel, adds operations to scrollable quicklinks view
 class QuicklinksModel {
     
     class quickLinkPair: Identifiable {

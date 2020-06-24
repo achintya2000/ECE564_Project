@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+// Structs for vector input for basic vector math
 struct VectorInput3: View {
     @Binding var x: Double
     @Binding var y: Double

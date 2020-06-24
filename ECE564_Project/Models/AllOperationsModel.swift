@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-
+// Class for adding the different operations to the home screen
 class AllOperations {
     
     class ListItem : Identifiable {
@@ -23,6 +23,7 @@ class AllOperations {
         }
     }
     
+    // Adds all operations to the operations home page list
     static func createAllOperationsList() -> [ListItem] {
         var AllOperations = [ListItem]()
         
