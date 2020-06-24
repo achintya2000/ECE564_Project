@@ -9,6 +9,7 @@
 import SwiftUI
 import Charts
 
+// View for solving first order ODEs
 struct ODE: View {
     @State var start: Double = 0.0
     @State var end: Double = 0.0

@@ -8,6 +8,8 @@
 
 import SwiftUI
 import Surge
+
+// View for solving systems of differential equations
 struct SystemSolver: View {
     @State var result: String = ""
     @State var matrixInput: String = ""

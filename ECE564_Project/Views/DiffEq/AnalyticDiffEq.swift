@@ -9,6 +9,7 @@
 import SwiftUI
 import URLImage
 
+// Solves ODEs using the Wolfram API and REST API
 struct AnalyticDiffEq: View {
     @State var equation = ""
     @State var getURL = "http://api.wolframalpha.com/v1/simple?appid=XG7L3G-WJ66P2PLJP&i="

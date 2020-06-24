@@ -8,8 +8,8 @@
 
 import SwiftUI
 
+// View for operations cards in horizontal scroll view on main page
 struct CardView: View, Hashable {
-    //var image: String
     var category: String
     var heading: String
     var caption: String

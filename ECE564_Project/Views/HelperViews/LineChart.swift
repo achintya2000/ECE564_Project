@@ -9,6 +9,7 @@
 import SwiftUI
 import Charts
 
+// Line for ODE solution - implements UIViewRep protocal to go from Charts to SwiftUI
 struct Line: UIViewRepresentable {
     @Binding var entries: [ChartDataEntry]
     
